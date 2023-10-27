@@ -1,12 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="AngleSharp"  IncludeAssets="compile" />
 		<PackageReference Include="ConfigureAwaitChecker.Analyzer" PrivateAssets="all" />
 		<PackageReference Include="JetBrains.Annotations" PrivateAssets="all" />
 		<PackageReference Include="System.Composition.AttributedModel" IncludeAssets="compile" />
+		<PackageReference Include="SteamKit2" IncludeAssets="compile" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net481'">
