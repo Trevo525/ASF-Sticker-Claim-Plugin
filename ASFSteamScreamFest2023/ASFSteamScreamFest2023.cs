@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -101,6 +102,10 @@ internal sealed partial class ASFSteamScreamFest2023 : IDisposable, IBotCommand2
 
 	// Call the command manually incase you want to test it.
 	public Task<string?> OnBotCommand(Bot bot, EAccess access, string message, string[] args, ulong steamID = 0) {
+		if (access < EAccess.FamilySharing) {
+			return Task.FromResult<string?>(null);
+		}
+
 		switch (args[0].ToUpperInvariant()) {
 			case "GETSTICKER" when args.Length > 1:
 				return ClaimSticker(Utilities.GetArgsAsText(args, 1, ","));
