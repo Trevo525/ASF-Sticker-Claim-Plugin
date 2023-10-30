@@ -19,3 +19,4 @@ Pull-requests welcome.
 ## Credits
 * Rudokhvist - They actually wrote most of the code for an older event. I just made it compile with the latest and re-wrote some minor things.
 * Archi - Helped me in the discord when I was having trouble building.
+* Abyrnos - Pointed out the need for access validation for the bot command.
