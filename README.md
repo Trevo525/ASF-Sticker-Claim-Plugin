@@ -6,13 +6,19 @@ ASF-Steam-Scream-Fest is a **[plugin](https://github.com/JustArchiNET/ArchiSteam
 
 ## Compilation
 You should be able to compile this with:
-`dotnet build ASFSteamScreamFest2023` *debug build*
-or
-`dotnet publish ASFSteamScreamFest2023 -c "Release" -o "out"` 
+### Debug
+```
+dotnet build ASFSteamScreamFest2023
+```
+### Release
+```
+dotnet publish ASFSteamScreamFest2023 -c "Release" -o "out"`
+```
 
 ## Ideas
-* Add a date field so it doesn't ping when the event is over.
+* Add a date field so it doesn't keep trying when the event is over.
 * Move config for this plugin into an .toml file so it doesn't need to be rebuilt per event
+* Make a command so you can change the current one without having to edit the plugin.
 
 Pull-requests welcome.
 
