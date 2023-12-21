@@ -1,18 +1,18 @@
-# ASF-Steam-Scream-Fest
+# ASF-Sticker-Claim-Plugin
 
 ## Description
 
-ASF-Steam-Scream-Fest is a **[plugin](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Plugins)** for **[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm)**. The goal is to have it check all accounts for the sticker of the day. This is for the Steam Scream Fest event. But should be easily editable for all future events, ones for stickers that is.
+ASF-Sticker-Claim-Plugin is a **[plugin](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Plugins)** for **[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm)**. The goal is to have it check all accounts for the sticker of the day. The sales may change each time and may require a code change but hopefully as time moves on, this will be more self-sufficient and require less work.
 
 ## Compilation
 You should be able to compile this with:
 ### Debug
 ```
-dotnet build ASFSteamScreamFest2023
+dotnet build ASFStickerClaimPlugin` *debug build*
 ```
 ### Release
 ```
-dotnet publish ASFSteamScreamFest2023 -c "Release" -o "out"`
+dotnet publish ASFStickerClaimPlugin -c "Release" -o "out"
 ```
 
 ## Ideas
