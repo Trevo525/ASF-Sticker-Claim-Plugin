@@ -6,9 +6,9 @@ ASF-Steam-Scream-Fest is a **[plugin](https://github.com/JustArchiNET/ArchiSteam
 
 ## Compilation
 You should be able to compile this with:
-`dotnet build ASFSteamScreamFest2023` *debug build*
+`dotnet build ASFStickerClaimPlugin` *debug build*
 or
-`dotnet publish ASFSteamScreamFest2023 -c "Release" -o "out"` 
+`dotnet publish ASFStickerClaimPlugin -c "Release" -o "out"`
 
 ## Ideas
 * Add a date field so it doesn't ping when the event is over.

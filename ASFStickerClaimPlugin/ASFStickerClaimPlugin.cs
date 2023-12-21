@@ -15,15 +15,16 @@ using ArchiSteamFarm.Steam.Integration;
 using ArchiSteamFarm.Steam.Interaction;
 using ArchiSteamFarm.Web.Responses;
 using JetBrains.Annotations;
+using Microsoft.Extensions.Hosting;
 using SteamKit2;
 
-namespace ASFSteamScreamFest2023;
+namespace ASFStickerClaimPlugin;
 
 #pragma warning disable CA1812 // ASF uses this class during runtime
 [UsedImplicitly]
-internal sealed partial class ASFSteamScreamFest2023 : IDisposable, IBotCommand2 {
-	public string Name => nameof(ASFSteamScreamFest2023);
-	public Version Version => typeof(ASFSteamScreamFest2023).Assembly.GetName().Version ?? throw new InvalidOperationException(nameof(Version));
+internal sealed partial class ASFStickerClaimPlugin : IDisposable, IBotCommand2 {
+	public string Name => nameof(ASFStickerClaimPlugin);
+	public Version Version => typeof(ASFStickerClaimPlugin).Assembly.GetName().Version ?? throw new InvalidOperationException(nameof(Version));
 
 	public Timer? RefreshTimer;
 
@@ -63,7 +64,7 @@ internal sealed partial class ASFSteamScreamFest2023 : IDisposable, IBotCommand2
 
 	private static async Task<string> GetSticker(Bot bot) {
 		const string post_request = "https://api.steampowered.com/ISaleItemRewardsService/ClaimItem/v1?access_token=";
-		const string html_request = "/category/scream";
+		const string html_request = "/category/action";
 
 		// Query the page.
 		HtmlDocumentResponse? html_response = await bot.ArchiWebHandler.UrlGetToHtmlDocumentWithSession(new Uri(ArchiWebHandler.SteamStoreURL, html_request)).ConfigureAwait(false);

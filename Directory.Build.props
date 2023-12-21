@@ -2,7 +2,7 @@
 	<Import Project="ArchiSteamFarm/Directory.Build.props" />
 
 	<PropertyGroup>
-		<PluginName>ASFSteamScreamFest2023</PluginName>
+		<PluginName>ASFStickerClaimPlugin</PluginName>
 		<Version>1.0.0.1</Version>
 	</PropertyGroup>
 
